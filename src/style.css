@@ -1,7 +1,50 @@
 body {
-    background-color: rgb(130, 85, 172);
+    margin: 0;
+    padding: 0;
+    height: 150vh; 
+    background: url('./background.jpg') center/cover no-repeat;
+    color: rgb(245, 240, 240);
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    display: flex;
+    flex-direction: column;
 }
 h1 {
     text-align: center;
-    color: white;
+}
+nav {
+    align-self: center;
+}
+button {
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.menu {
+    display: flex;
+    padding: 20px;
+}
+img {
+    width: 14rem;
+    height: 200px;
+    border-radius: 100%;
+}
+.menu-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .menu {
+      flex-direction: column;
+    }
 }
