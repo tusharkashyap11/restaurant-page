@@ -2,7 +2,7 @@ import paneer from './kadhaipaneer.jpg';
 import naan from './garlicnaan.jpg';
 import biryani from './chickenbiryani.jpg';
 
-function menu() {
+export function menu() {
     const menu = document.createElement('div');
     menu.classList.add('menu');
     const kadhaiPaneer = createDiv();
@@ -45,16 +45,4 @@ function menu() {
 function createDiv() {
     const d = document.createElement('div');
     return d;
-}
-
-export function loadMenu() {
-    const prevMenu = document.querySelector('.menu-tab');
-    if (prevMenu) {
-        prevMenu.remove();
-    }
-    const element = document.getElementById('content');
-    const div = document.createElement('div');
-    div.classList.add('menu-tab');
-    div.appendChild(menu());
-    element.appendChild(div);
 }

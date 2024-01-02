@@ -4,6 +4,7 @@ body {
     height: 150vh; 
     background: url('./background.jpg') center/cover no-repeat;
     color: rgb(245, 240, 240);
+    font-family: 'Roboto Serif', serif;
 }
 #content {
     display: flex;
@@ -21,6 +22,7 @@ nav {
     align-self: center;
 }
 button {
+    font-family: 'Roboto Serif', serif;
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
@@ -28,9 +30,14 @@ button {
     padding: 10px 20px;
     margin: 10px;
 }
+.menu-tab {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 90%;
+    padding: 10px;
+}
 .menu {
     display: flex;
-    padding: 20px;
+    justify-content: center;
 }
 img {
     width: 14rem;
@@ -47,4 +54,22 @@ img {
     .menu {
       flex-direction: column;
     }
+}
+.contact-tab {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 90%;
+    padding: 10px;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 90%;
+    padding: 10px;
 }
